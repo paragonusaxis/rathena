@@ -1,0 +1,5 @@
+-- Build/Rebuild
+MSBuild <path_to_rAthena.sln> /p:PlatformToolset=v141
+
+-- Clean
+MSBuild <path_to_rAthena.sln> /t:Clean
