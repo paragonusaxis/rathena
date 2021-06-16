@@ -80,7 +80,8 @@
 //npc: npc/custom/quests/kaho_balmung.txt
 //npc: npc/custom/quests/kahohorn.txt
 // -- Hunting Grounds Quest (Similar to iRO's Gramps)
-npc: npc/custom/quests/hunting_grounds.txt
+npc: npc/custom/quests/hunting_grounexit
+
 
 // ----------------------- Event Scripts -----------------------
 // -- Mini-Game Events
