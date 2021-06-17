@@ -64825,6 +64825,7 @@ Body:
     Buy: 10
     Weight: 400
     Defense: 120
+    Slots: 1
     Locations:
       Armor: true
     EquipLevelMin: 90
@@ -64835,21 +64836,21 @@ Body:
       bonus bUnbreakableArmor;
       bonus bDefEle,Ele_dark;
       if (.@r>=5) {
-         .@val = 10;
-         if (.@r>=7) {
+        .@val = 10;
+        if (.@r>=7) {
+          .@val += 15;
+          if (.@r>=9) {
             .@val += 15;
-            if (.@r>=9) {
-               .@val += 15;
-            }
-         }
-         bonus2 bAddEle,Ele_Dark,.@val;
-         bonus2 bAddEle,Ele_Undead,.@val;
-         bonus2 bMagicAddEle,Ele_Dark,.@val;
-         bonus2 bMagicAddEle,Ele_Undead,.@val;
-         bonus2 bAddRace,RC_Undead,.@val;
-         bonus2 bAddRace,RC_Demon,.@val;
-         bonus2 bMagicAddRace,RC_Undead,.@val;
-         bonus2 bMagicAddRace,RC_Demon,.@val;
+          }
+        }
+        bonus2 bAddEle,Ele_Dark,.@val;
+        bonus2 bAddEle,Ele_Undead,.@val;
+        bonus2 bMagicAddEle,Ele_Dark,.@val;
+        bonus2 bMagicAddEle,Ele_Undead,.@val;
+        bonus2 bAddRace,RC_Undead,.@val;
+        bonus2 bAddRace,RC_Demon,.@val;
+        bonus2 bMagicAddRace,RC_Undead,.@val;
+        bonus2 bMagicAddRace,RC_Demon,.@val;
       }
   - Id: 15205
     AegisName: Holy_Coat
